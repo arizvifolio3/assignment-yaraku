@@ -14,10 +14,28 @@ FROM php:7.4-apache
 ARG LARAVEL_PATH
 
 RUN apt-get update && apt-get install -y \
-    libzip-dev \
-    && docker-php-ext-install \
-        pdo_mysql \
-        zip
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libmcrypt-dev \
+        libpng-dev \
+        zlib1g-dev \
+        libxml2-dev \
+        libzip-dev \
+        libonig-dev \
+        graphviz \
+        libcurl4-openssl-dev \
+        pkg-config \
+        libssl-dev \
+        supervisor \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-install pdo_mysql \
+    && docker-php-ext-install mysqli \
+    && docker-php-ext-install exif \
+    && docker-php-ext-install zip \
+    && docker-php-ext-install pdo \
+    && docker-php-ext-install mbstring \
+    && docker-php-source delete
 
 ENV APACHE_DOCUMENT_ROOT $LARAVEL_PATH/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
@@ -35,6 +53,15 @@ RUN pecl install xdebug-2.9.2 \
 
 COPY --from=composer $LARAVEL_PATH $LARAVEL_PATH
 
-RUN chown -R www-data $LARAVEL_PATH/storage
-
 WORKDIR $LARAVEL_PATH
+
+RUN useradd -G www-data,root -u 1000 -d /home/devuser devuser
+RUN mkdir -p /home/devuser/.composer && \
+    chown -R devuser:devuser /home/devuser
+
+# Permissions
+RUN chgrp -R www-data storage public $LARAVEL_PATH/bootstrap/cache
+RUN chmod -R ug+rwx storage public $LARAVEL_PATH/bootstrap/cache
+
+RUN php artisan config:cache
+RUN php artisan config:clear

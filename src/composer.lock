@@ -4,8 +4,674 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "40108d89c2e7a6e798ffb68e0d48fa91",
+    "content-hash": "995cdb59e44652fc91d0fce4ff61b9b8",
     "packages": [
+        {
+            "name": "acfbentveld/xml",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ACFBentveld/XML.git",
+                "reference": "e13034795fb1b64a9be5f23dce46ff6673d5a75a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ACFBentveld/XML/zipball/e13034795fb1b64a9be5f23dce46ff6673d5a75a",
+                "reference": "e13034795fb1b64a9be5f23dce46ff6673d5a75a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-simplexml": "*",
+                "illuminate/support": "5.*|6.*|7.*|8.*",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0|~4.0.0",
+                "phpunit/phpunit": "^7.0|^8.0",
+                "spatie/phpunit-snapshot-assertions": "^1.3|^4.0"
+            },
+            "suggest": {
+                "illuminate/view": "Required to use the load view feature.",
+                "laravel/laravel": "Required to use the load view feature."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ACFBentveld\\XML\\XMLServiceProvider"
+                    ],
+                    "aliases": {
+                        "XML": "ACFBentveld\\XML\\XMLFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ACFBentveld\\XML\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Amando Vledder",
+                    "email": "amando@acfbentveld.nl",
+                    "homepage": "https://acfbentveld.nl/",
+                    "role": "Developer"
+                }
+            ],
+            "homepage": "https://github.com/ACFBentveld/XML",
+            "keywords": [
+                "laravel",
+                "reader",
+                "xml"
+            ],
+            "time": "2021-02-19T07:39:41+00:00"
+        },
+        {
+            "name": "brackets/admin-auth",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BRACKETS-by-TRIAD/admin-auth.git",
+                "reference": "cdb592ff345038cac7c137be789a993bce7f4b88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BRACKETS-by-TRIAD/admin-auth/zipball/cdb592ff345038cac7c137be789a993bce7f4b88",
+                "reference": "cdb592ff345038cac7c137be789a993bce7f4b88",
+                "shasum": ""
+            },
+            "require": {
+                "brackets/admin-ui": "^4.0",
+                "brackets/media": "^4.0",
+                "illuminate/support": "^6.0|^7.0",
+                "php": "^7.2.5",
+                "spatie/laravel-permission": "^3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "~4.0|~5.0",
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Brackets\\AdminAuth\\AdminAuthServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "Brackets\\AdminAuth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavol Perdík",
+                    "email": "pavol.perdik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "David Běhal",
+                    "email": "david.behal@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Authentication interface for brackets/admin-ui",
+            "keywords": [
+                "Authentication",
+                "admin",
+                "auth",
+                "cms",
+                "laravel",
+                "login",
+                "user"
+            ],
+            "time": "2020-10-22T09:28:13+00:00"
+        },
+        {
+            "name": "brackets/admin-listing",
+            "version": "3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BRACKETS-by-TRIAD/admin-listing.git",
+                "reference": "0162ed97b0567f5fdd79d8b5610e4bcfe2f99e1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BRACKETS-by-TRIAD/admin-listing/zipball/0162ed97b0567f5fdd79d8b5610e4bcfe2f99e1b",
+                "reference": "0162ed97b0567f5fdd79d8b5610e4bcfe2f99e1b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "php": "^7.2.5|^7.3.0|^8.0"
+            },
+            "require-dev": {
+                "brackets/translatable": "^2.0",
+                "fzaninotto/faker": "~1.4",
+                "mockery/mockery": "0.9.*|^1.0",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "^8.5|^9.0"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Brackets\\AdminListing\\AdminListingServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "Brackets\\AdminListing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavol Perdík",
+                    "email": "pavol.perdik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "David Běhal",
+                    "email": "david.behal@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Richard Dominik",
+                    "email": "richard.dominik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Query-building helper for listing of Eloquent models",
+            "keywords": [
+                "admin",
+                "cms",
+                "datatable",
+                "eloquent",
+                "laravel",
+                "listing"
+            ],
+            "time": "2020-12-20T13:52:04+00:00"
+        },
+        {
+            "name": "brackets/admin-translations",
+            "version": "4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BRACKETS-by-TRIAD/admin-translations.git",
+                "reference": "51ac21082204c28b3faa66e77d64ac7629454a04"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BRACKETS-by-TRIAD/admin-translations/zipball/51ac21082204c28b3faa66e77d64ac7629454a04",
+                "reference": "51ac21082204c28b3faa66e77d64ac7629454a04",
+                "shasum": ""
+            },
+            "require": {
+                "brackets/admin-listing": "^3.0",
+                "brackets/admin-ui": "^4.0",
+                "brackets/translatable": "^2.0",
+                "illuminate/console": "^6.0|^7.0|^8.0",
+                "illuminate/container": "^6.0|^7.0|^8.0",
+                "illuminate/contracts": "^6.0|^7.0|^8.0",
+                "illuminate/database": "^6.0|^7.0|^8.0",
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "php": "^7.2.5|^7.3.0|^8.0"
+            },
+            "require-dev": {
+                "doctrine/dbal": "~2.5.13|^2.6",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "^8.5|^9.0"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Brackets\\AdminTranslations\\AdminTranslationsServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "Brackets\\AdminTranslations\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavol Perdík",
+                    "email": "pavol.perdik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "David Běhal",
+                    "email": "david.behal@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Richard Dominik",
+                    "email": "richard.dominik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Translation manager for brackets/admin-ui",
+            "keywords": [
+                "admin",
+                "cms",
+                "laravel",
+                "localizations",
+                "manager",
+                "translations"
+            ],
+            "time": "2020-12-20T13:52:49+00:00"
+        },
+        {
+            "name": "brackets/admin-ui",
+            "version": "v4.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BRACKETS-by-TRIAD/admin-ui.git",
+                "reference": "bf2cd09be654bbf77a4b886fb25ac87de816ddeb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BRACKETS-by-TRIAD/admin-ui/zipball/bf2cd09be654bbf77a4b886fb25ac87de816ddeb",
+                "reference": "bf2cd09be654bbf77a4b886fb25ac87de816ddeb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "php": "^7.2.5|^7.3.0|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*|^1.0",
+                "orchestra/testbench-browser-kit": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "^8.5|^9.0"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Brackets\\AdminUI\\AdminUIServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "Brackets\\AdminUI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavol Perdík",
+                    "email": "pavol.perdik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Matej Minár",
+                    "email": "matej.minar@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dušan Subally",
+                    "email": "dusan.subally@triad.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Administration user interface template",
+            "keywords": [
+                "admin",
+                "admin-ui",
+                "administration",
+                "cms",
+                "laravel",
+                "template"
+            ],
+            "time": "2021-02-03T14:52:00+00:00"
+        },
+        {
+            "name": "brackets/advanced-logger",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BRACKETS-by-TRIAD/advanced-logger.git",
+                "reference": "61fa5b2cbbdda96b78ab7a19c6915db21af626de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BRACKETS-by-TRIAD/advanced-logger/zipball/61fa5b2cbbdda96b78ab7a19c6915db21af626de",
+                "reference": "61fa5b2cbbdda96b78ab7a19c6915db21af626de",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/http": "^6.0|^7.0|^8.0",
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "monolog/monolog": "^1.12|^2.0",
+                "php": "^7.2.5|^7.3.0|^8.0"
+            },
+            "require-dev": {
+                "laravel/framework": "6.*|7.*|8.*",
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "^8.5|^9.0"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Brackets\\AdvancedLogger\\AdvancedLoggerServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "Brackets\\AdvancedLogger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Běhal",
+                    "email": "david.behal@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Advanced logger",
+            "keywords": [
+                "logger",
+                "request logger"
+            ],
+            "time": "2020-12-20T13:53:40+00:00"
+        },
+        {
+            "name": "brackets/craftable",
+            "version": "v5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BRACKETS-by-TRIAD/craftable.git",
+                "reference": "3f83b710dd3ccc2a9a175193a7752b92512e02c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BRACKETS-by-TRIAD/craftable/zipball/3f83b710dd3ccc2a9a175193a7752b92512e02c8",
+                "reference": "3f83b710dd3ccc2a9a175193a7752b92512e02c8",
+                "shasum": ""
+            },
+            "require": {
+                "brackets/admin-auth": "^5.0",
+                "brackets/admin-listing": "^3.0",
+                "brackets/admin-translations": "^4.0",
+                "brackets/admin-ui": "^4.0",
+                "brackets/advanced-logger": "^2.0",
+                "brackets/media": "^4.0",
+                "brackets/translatable": "^2.0",
+                "illuminate/support": "^6.0|^7.0",
+                "maatwebsite/excel": "^3.1",
+                "php": "^7.2.5",
+                "spatie/laravel-backup": "^6.0",
+                "spatie/laravel-permission": "^3.0"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Brackets\\Craftable\\CraftableServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "Brackets\\Craftable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavol Perdík",
+                    "email": "pavol.perdik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "David Běhal",
+                    "email": "david.behal@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Richard Dominik",
+                    "email": "richard.dominik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Administration toolkit for Laravel 7 - starting point for developing administration interface",
+            "keywords": [
+                "admin",
+                "administration",
+                "brackets",
+                "cms",
+                "craftable",
+                "crud",
+                "framework",
+                "laravel",
+                "toolkit"
+            ],
+            "time": "2020-03-16T13:12:57+00:00"
+        },
+        {
+            "name": "brackets/media",
+            "version": "v4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BRACKETS-by-TRIAD/media.git",
+                "reference": "4717e3c86c1c6324d0d505638b494d9ff85819f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BRACKETS-by-TRIAD/media/zipball/4717e3c86c1c6324d0d505638b494d9ff85819f2",
+                "reference": "4717e3c86c1c6324d0d505638b494d9ff85819f2",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0",
+                "php": "^7.2.5",
+                "spatie/laravel-medialibrary": "^7.19"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~4.0|~5.0",
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Brackets\\Media\\MediaServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "Brackets\\Media\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavol Perdík",
+                    "email": "pavol.perdik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Marek Kratochvíla",
+                    "email": "marek.kratochvila@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "David Běhal",
+                    "email": "david.behal@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Associate files with Eloquent models",
+            "keywords": [
+                "cms",
+                "images",
+                "laravel",
+                "media",
+                "medialibrary"
+            ],
+            "time": "2020-04-29T15:20:13+00:00"
+        },
+        {
+            "name": "brackets/translatable",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BRACKETS-by-TRIAD/translatable.git",
+                "reference": "c21796cf2bde625f842806483885c56c1745b8b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BRACKETS-by-TRIAD/translatable/zipball/c21796cf2bde625f842806483885c56c1745b8b3",
+                "reference": "c21796cf2bde625f842806483885c56c1745b8b3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "6.*|7.*|8.*",
+                "php": "^7.2.5|^7.3.0|^8.0",
+                "spatie/laravel-translatable": "^4.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "^8.5|^9.0"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Brackets\\Translatable\\TranslatableServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "Brackets\\Translatable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavol Perdík",
+                    "email": "pavol.perdik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "David Běhal",
+                    "email": "david.behal@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Make your Eloquent models and other content translated into multiple languages",
+            "keywords": [
+                "admin",
+                "cms",
+                "eloquent",
+                "language",
+                "laravel",
+                "locale",
+                "localization",
+                "translate",
+                "translations"
+            ],
+            "time": "2020-12-20T13:54:21+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "v0.1.1",
@@ -281,6 +947,56 @@
             "time": "2020-02-13T22:36:52+00:00"
         },
         {
+            "name": "ezyang/htmlpurifier",
+            "version": "v4.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezyang/htmlpurifier.git",
+                "reference": "08e27c97e4c6ed02f37c5b2b20488046c8d90d75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
+                "reference": "08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "simpletest/simpletest": "dev-master#72de02a7b80c6bb8864ef9bf66d41d2f58f826bd"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
+                "files": [
+                    "library/HTMLPurifier.composer.php"
+                ],
+                "exclude-from-classmap": [
+                    "/library/HTMLPurifier/Language/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Edward Z. Yang",
+                    "email": "admin@htmlpurifier.org",
+                    "homepage": "http://ezyang.com"
+                }
+            ],
+            "description": "Standards compliant HTML filter written in PHP",
+            "homepage": "http://htmlpurifier.org/",
+            "keywords": [
+                "html"
+            ],
+            "time": "2020-06-29T00:56:53+00:00"
+        },
+        {
             "name": "fideloper/proxy",
             "version": "4.3.0",
             "source": {
@@ -335,6 +1051,147 @@
             "time": "2020-02-22T01:51:47+00:00"
         },
         {
+            "name": "guzzlehttp/psr7",
+            "version": "1.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "dc960a912984efb74d0a90222870c72c87f10c91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dc960a912984efb74d0a90222870c72c87f10c91",
+                "reference": "dc960a912984efb74d0a90222870c72c87f10c91",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0",
+                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "ext-zlib": "*",
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
+            },
+            "suggest": {
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "psr-7",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2021-04-26T09:17:50+00:00"
+        },
+        {
+            "name": "intervention/image",
+            "version": "2.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "abbf18d5ab8367f96b3205ca3c89fb2fa598c69e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/abbf18d5ab8367f96b3205ca3c89fb2fa598c69e",
+                "reference": "abbf18d5ab8367f96b3205ca3c89fb2fa598c69e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "^4.8 || ^5.7"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Intervention\\Image\\ImageServiceProvider"
+                    ],
+                    "aliases": {
+                        "Image": "Intervention\\Image\\Facades\\Image"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@olivervogel.com",
+                    "homepage": "http://olivervogel.com/"
+                }
+            ],
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "time": "2019-11-02T09:15:47+00:00"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "v0.2",
             "source": {
@@ -374,6 +1231,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -420,6 +1278,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -790,6 +1649,353 @@
             "time": "2020-03-08T18:53:20+00:00"
         },
         {
+            "name": "league/glide",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/glide.git",
+                "reference": "ae5e26700573cb678919d28e425a8b87bc71c546"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/glide/zipball/ae5e26700573cb678919d28e425a8b87bc71c546",
+                "reference": "ae5e26700573cb678919d28e425a8b87bc71c546",
+                "shasum": ""
+            },
+            "require": {
+                "intervention/image": "^2.4",
+                "league/flysystem": "^1.0",
+                "php": "^7.2|^8.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.3",
+                "phpunit/php-token-stream": "^3.1|^4.0",
+                "phpunit/phpunit": "^8.5|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Glide\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "homepage": "http://reinink.ca"
+                }
+            ],
+            "description": "Wonderfully easy on-demand image manipulation library with an HTTP based API.",
+            "homepage": "http://glide.thephpleague.com",
+            "keywords": [
+                "ImageMagick",
+                "editing",
+                "gd",
+                "image",
+                "imagick",
+                "league",
+                "manipulation",
+                "processing"
+            ],
+            "time": "2020-11-05T17:34:03+00:00"
+        },
+        {
+            "name": "maatwebsite/excel",
+            "version": "3.1.31",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
+                "reference": "cbe6370af70f93bd017f77ef92d32bd492a47fcb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/cbe6370af70f93bd017f77ef92d32bd492a47fcb",
+                "reference": "cbe6370af70f93bd017f77ef92d32bd492a47fcb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/support": "5.8.*|^6.0|^7.0|^8.0",
+                "php": "^7.0|^8.0",
+                "phpoffice/phpspreadsheet": "^1.18"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Maatwebsite\\Excel\\ExcelServiceProvider"
+                    ],
+                    "aliases": {
+                        "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Maatwebsite\\Excel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Brouwers",
+                    "email": "patrick@maatwebsite.nl"
+                }
+            ],
+            "description": "Supercharged Excel exports and imports in Laravel",
+            "keywords": [
+                "PHPExcel",
+                "batch",
+                "csv",
+                "excel",
+                "export",
+                "import",
+                "laravel",
+                "php",
+                "phpspreadsheet"
+            ],
+            "time": "2021-06-02T17:31:29+00:00"
+        },
+        {
+            "name": "maennchen/zipstream-php",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maennchen/ZipStream-PHP.git",
+                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/c4c5803cc1f93df3d2448478ef79394a5981cc58",
+                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58",
+                "shasum": ""
+            },
+            "require": {
+                "myclabs/php-enum": "^1.5",
+                "php": ">= 7.1",
+                "psr/http-message": "^1.0",
+                "symfony/polyfill-mbstring": "^1.0"
+            },
+            "require-dev": {
+                "ext-zip": "*",
+                "guzzlehttp/guzzle": ">= 6.3",
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": ">= 7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Duncan",
+                    "email": "pabs@pablotron.org"
+                },
+                {
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
+                },
+                {
+                    "name": "András Kolesár",
+                    "email": "kolesar@kolesar.hu"
+                }
+            ],
+            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
+            "keywords": [
+                "stream",
+                "zip"
+            ],
+            "time": "2020-05-30T13:11:16+00:00"
+        },
+        {
+            "name": "markbaker/complex",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPComplex.git",
+                "reference": "6f724d7e04606fd8adaa4e3bb381c3e9db09c946"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/6f724d7e04606fd8adaa4e3bb381c3e9db09c946",
+                "reference": "6f724d7e04606fd8adaa4e3bb381c3e9db09c946",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "phpcompatibility/php-compatibility": "^9.0",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.3",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Complex\\": "classes/src/"
+                },
+                "files": [
+                    "classes/src/functions/abs.php",
+                    "classes/src/functions/acos.php",
+                    "classes/src/functions/acosh.php",
+                    "classes/src/functions/acot.php",
+                    "classes/src/functions/acoth.php",
+                    "classes/src/functions/acsc.php",
+                    "classes/src/functions/acsch.php",
+                    "classes/src/functions/argument.php",
+                    "classes/src/functions/asec.php",
+                    "classes/src/functions/asech.php",
+                    "classes/src/functions/asin.php",
+                    "classes/src/functions/asinh.php",
+                    "classes/src/functions/atan.php",
+                    "classes/src/functions/atanh.php",
+                    "classes/src/functions/conjugate.php",
+                    "classes/src/functions/cos.php",
+                    "classes/src/functions/cosh.php",
+                    "classes/src/functions/cot.php",
+                    "classes/src/functions/coth.php",
+                    "classes/src/functions/csc.php",
+                    "classes/src/functions/csch.php",
+                    "classes/src/functions/exp.php",
+                    "classes/src/functions/inverse.php",
+                    "classes/src/functions/ln.php",
+                    "classes/src/functions/log2.php",
+                    "classes/src/functions/log10.php",
+                    "classes/src/functions/negative.php",
+                    "classes/src/functions/pow.php",
+                    "classes/src/functions/rho.php",
+                    "classes/src/functions/sec.php",
+                    "classes/src/functions/sech.php",
+                    "classes/src/functions/sin.php",
+                    "classes/src/functions/sinh.php",
+                    "classes/src/functions/sqrt.php",
+                    "classes/src/functions/tan.php",
+                    "classes/src/functions/tanh.php",
+                    "classes/src/functions/theta.php",
+                    "classes/src/operations/add.php",
+                    "classes/src/operations/subtract.php",
+                    "classes/src/operations/multiply.php",
+                    "classes/src/operations/divideby.php",
+                    "classes/src/operations/divideinto.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@lange.demon.co.uk"
+                }
+            ],
+            "description": "PHP Class for working with complex numbers",
+            "homepage": "https://github.com/MarkBaker/PHPComplex",
+            "keywords": [
+                "complex",
+                "mathematics"
+            ],
+            "time": "2021-06-02T09:44:11+00:00"
+        },
+        {
+            "name": "markbaker/matrix",
+            "version": "2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPMatrix.git",
+                "reference": "174395a901b5ba0925f1d790fa91bab531074b61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPMatrix/zipball/174395a901b5ba0925f1d790fa91bab531074b61",
+                "reference": "174395a901b5ba0925f1d790fa91bab531074b61",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "phpcompatibility/php-compatibility": "^9.0",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phploc/phploc": "^4.0",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.3",
+                "sebastian/phpcpd": "^4.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Matrix\\": "classes/src/"
+                },
+                "files": [
+                    "classes/src/Functions/adjoint.php",
+                    "classes/src/Functions/antidiagonal.php",
+                    "classes/src/Functions/cofactors.php",
+                    "classes/src/Functions/determinant.php",
+                    "classes/src/Functions/diagonal.php",
+                    "classes/src/Functions/identity.php",
+                    "classes/src/Functions/inverse.php",
+                    "classes/src/Functions/minors.php",
+                    "classes/src/Functions/trace.php",
+                    "classes/src/Functions/transpose.php",
+                    "classes/src/Operations/add.php",
+                    "classes/src/Operations/directsum.php",
+                    "classes/src/Operations/subtract.php",
+                    "classes/src/Operations/multiply.php",
+                    "classes/src/Operations/divideby.php",
+                    "classes/src/Operations/divideinto.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@demon-angel.eu"
+                }
+            ],
+            "description": "PHP Class for working with matrices",
+            "homepage": "https://github.com/MarkBaker/PHPMatrix",
+            "keywords": [
+                "mathematics",
+                "matrix",
+                "vector"
+            ],
+            "time": "2021-05-25T15:42:17+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.0.2",
             "source": {
@@ -869,6 +2075,52 @@
                 "psr-3"
             ],
             "time": "2019-12-20T14:22:59+00:00"
+        },
+        {
+            "name": "myclabs/php-enum",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/php-enum.git",
+                "reference": "46cf3d8498b095bd33727b13fd5707263af99421"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/46cf3d8498b095bd33727b13fd5707263af99421",
+                "reference": "46cf3d8498b095bd33727b13fd5707263af99421",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "1.*",
+                "vimeo/psalm": "^4.5.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MyCLabs\\Enum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP Enum contributors",
+                    "homepage": "https://github.com/myclabs/php-enum/graphs/contributors"
+                }
+            ],
+            "description": "PHP Enum implementation",
+            "homepage": "http://github.com/myclabs/php-enum",
+            "keywords": [
+                "enum"
+            ],
+            "time": "2021-02-15T16:11:48+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1054,6 +2306,44 @@
             "time": "2019-11-29T22:36:02+00:00"
         },
         {
+            "name": "org_heigl/ghostscript",
+            "version": "2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heiglandreas/Org_Heigl_Ghostscript.git",
+                "reference": "fd73693a3f213427b585b45fa744c9cc60679f25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heiglandreas/Org_Heigl_Ghostscript/zipball/fd73693a3f213427b585b45fa744c9cc60679f25",
+                "reference": "fd73693a3f213427b585b45fa744c9cc60679f25",
+                "shasum": ""
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpdocumentor/phpdocumentor": "^2.9",
+                "phpunit/phpunit": "^5.5||^6.0||^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Org_Heigl\\Ghostscript\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Heigl",
+                    "email": "andreas@heigl.org"
+                }
+            ],
+            "description": "A PHP-Wrapper around the Ghostscript-CLI",
+            "time": "2020-09-23T05:00:00+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v9.99.99",
             "source": {
@@ -1097,6 +2387,106 @@
                 "random"
             ],
             "time": "2018-07-02T15:55:56+00:00"
+        },
+        {
+            "name": "phpoffice/phpspreadsheet",
+            "version": "1.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
+                "reference": "418cd304e8e6b417ea79c3b29126a25dc4b1170c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/418cd304e8e6b417ea79c3b29126a25dc4b1170c",
+                "reference": "418cd304e8e6b417ea79c3b29126a25dc4b1170c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-fileinfo": "*",
+                "ext-gd": "*",
+                "ext-iconv": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "ext-xml": "*",
+                "ext-xmlreader": "*",
+                "ext-xmlwriter": "*",
+                "ext-zip": "*",
+                "ext-zlib": "*",
+                "ezyang/htmlpurifier": "^4.13",
+                "maennchen/zipstream-php": "^2.1",
+                "markbaker/complex": "^2.0",
+                "markbaker/matrix": "^2.0",
+                "php": "^7.2 || ^8.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "dompdf/dompdf": "^1.0",
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "jpgraph/jpgraph": "^4.0",
+                "mpdf/mpdf": "^8.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpstan/phpstan": "^0.12.82",
+                "phpstan/phpstan-phpunit": "^0.12.18",
+                "phpunit/phpunit": "^8.5",
+                "squizlabs/php_codesniffer": "^3.5",
+                "tecnickcom/tcpdf": "^6.3"
+            },
+            "suggest": {
+                "dompdf/dompdf": "Option for rendering PDF with PDF Writer (doesn't yet support PHP8)",
+                "jpgraph/jpgraph": "Option for rendering charts, or including charts with PDF or HTML Writers",
+                "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
+                "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer (doesn't yet support PHP8)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpOffice\\PhpSpreadsheet\\": "src/PhpSpreadsheet"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "https://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Mark Baker",
+                    "homepage": "https://markbakeruk.net"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "https://rootslabs.net"
+                },
+                {
+                    "name": "Erik Tilt"
+                },
+                {
+                    "name": "Adrien Crivelli"
+                }
+            ],
+            "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "https://github.com/PHPOffice/PhpSpreadsheet",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "gnumeric",
+                "ods",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "time": "2021-05-31T18:21:15+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -1201,6 +2591,157 @@
                 "psr"
             ],
             "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "psr/http-client",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "time": "2020-06-29T06:28:15+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2019-04-30T12:38:16+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/log",
@@ -1372,6 +2913,46 @@
             "time": "2019-12-06T14:19:43+00:00"
         },
         {
+            "name": "ralouphie/getallheaders",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralouphie/getallheaders.git",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5 || ^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/getallheaders.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Khattar",
+                    "email": "ralph.khattar@gmail.com"
+                }
+            ],
+            "description": "A polyfill for getallheaders.",
+            "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
             "name": "ramsey/uuid",
             "version": "3.9.3",
             "source": {
@@ -1457,6 +3038,561 @@
                 "uuid"
             ],
             "time": "2020-02-21T04:36:14+00:00"
+        },
+        {
+            "name": "spatie/db-dumper",
+            "version": "2.21.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/db-dumper.git",
+                "reference": "05e5955fb882008a8947c5a45146d86cfafa10d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/db-dumper/zipball/05e5955fb882008a8947c5a45146d86cfafa10d1",
+                "reference": "05e5955fb882008a8947c5a45146d86cfafa10d1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0",
+                "symfony/process": "^4.2|^5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0|^8.0|^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\DbDumper\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dump databases",
+            "homepage": "https://github.com/spatie/db-dumper",
+            "keywords": [
+                "database",
+                "db-dumper",
+                "dump",
+                "mysqldump",
+                "spatie"
+            ],
+            "time": "2021-02-24T14:56:42+00:00"
+        },
+        {
+            "name": "spatie/image",
+            "version": "1.10.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/image.git",
+                "reference": "63a963d0200fb26f2564bf7201fc7272d9b22933"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/image/zipball/63a963d0200fb26f2564bf7201fc7272d9b22933",
+                "reference": "63a963d0200fb26f2564bf7201fc7272d9b22933",
+                "shasum": ""
+            },
+            "require": {
+                "ext-exif": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "league/glide": "^1.6",
+                "php": "^7.2|^8.0",
+                "spatie/image-optimizer": "^1.1",
+                "spatie/temporary-directory": "^1.0|^2.0",
+                "symfony/process": "^3.0|^4.0|^5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0|^9.0",
+                "symfony/var-dumper": "^4.0|^5.0",
+                "vimeo/psalm": "^4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Image\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manipulate images with an expressive API",
+            "homepage": "https://github.com/spatie/image",
+            "keywords": [
+                "image",
+                "spatie"
+            ],
+            "time": "2021-04-07T08:42:24+00:00"
+        },
+        {
+            "name": "spatie/image-optimizer",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/image-optimizer.git",
+                "reference": "c22202fdd57856ed18a79cfab522653291a6e96a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/image-optimizer/zipball/c22202fdd57856ed18a79cfab522653291a6e96a",
+                "reference": "c22202fdd57856ed18a79cfab522653291a6e96a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "php": "^7.2|^8.0",
+                "psr/log": "^1.0",
+                "symfony/process": "^4.2|^5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0|^9.0",
+                "symfony/var-dumper": "^4.2|^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\ImageOptimizer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily optimize images using PHP",
+            "homepage": "https://github.com/spatie/image-optimizer",
+            "keywords": [
+                "image-optimizer",
+                "spatie"
+            ],
+            "time": "2021-04-22T06:17:27+00:00"
+        },
+        {
+            "name": "spatie/laravel-backup",
+            "version": "6.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-backup.git",
+                "reference": "6b2229a07d92c2bb146ad9c5223fc32e9d74830c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-backup/zipball/6b2229a07d92c2bb146ad9c5223fc32e9d74830c",
+                "reference": "6b2229a07d92c2bb146ad9c5223fc32e9d74830c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-zip": "^1.14.0",
+                "illuminate/console": "^6.0|^7.0|^8.0",
+                "illuminate/contracts": "^6.0|^7.0|^8.0",
+                "illuminate/events": "^6.0|^7.0|^8.0",
+                "illuminate/filesystem": "^6.0|^7.0|^8.0",
+                "illuminate/notifications": "^6.0|^7.0|^8.0",
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "league/flysystem": "^1.0.49",
+                "php": "^7.3|^8.0",
+                "spatie/db-dumper": "^2.12",
+                "spatie/temporary-directory": "^1.1",
+                "symfony/finder": "^4.2|^5.0"
+            },
+            "require-dev": {
+                "laravel/slack-notification-channel": "^2.3",
+                "league/flysystem-aws-s3-v3": "^1.0",
+                "mockery/mockery": "^1.4.2",
+                "orchestra/testbench": "4.*|5.*|6.*",
+                "phpunit/phpunit": "^8.4|^9.0"
+            },
+            "suggest": {
+                "laravel/slack-notification-channel": "Required for sending notifications via Slack"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Backup\\BackupServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Backup\\": "src"
+                },
+                "files": [
+                    "src/Helpers/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel package to backup your application",
+            "homepage": "https://github.com/spatie/laravel-backup",
+            "keywords": [
+                "backup",
+                "database",
+                "laravel-backup",
+                "spatie"
+            ],
+            "time": "2021-04-15T09:31:32+00:00"
+        },
+        {
+            "name": "spatie/laravel-medialibrary",
+            "version": "7.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-medialibrary.git",
+                "reference": "d650ef5163f5285b7fcc647d789f80f194f3bdb2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/d650ef5163f5285b7fcc647d789f80f194f3bdb2",
+                "reference": "d650ef5163f5285b7fcc647d789f80f194f3bdb2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "ext-json": "*",
+                "illuminate/bus": "~5.8.35|^6.0|^7.0|^8.0",
+                "illuminate/console": "~5.8.35|^6.0|^7.0|^8.0",
+                "illuminate/database": "~5.8.35|^6.0|^7.0|^8.0",
+                "illuminate/pipeline": "~5.8.35|^6.0|^7.0|^8.0",
+                "illuminate/support": "~5.8.35|^6.0|^7.0|^8.0",
+                "league/flysystem": "^1.0.8",
+                "maennchen/zipstream-php": "^1.0|^2.0",
+                "php": "^7.2|^8.0",
+                "spatie/image": "^1.4.0",
+                "spatie/pdf-to-image": "^2.0",
+                "spatie/temporary-directory": "^1.1",
+                "symfony/console": "^4.4|^5.1"
+            },
+            "conflict": {
+                "php-ffmpeg/php-ffmpeg": "<0.6.1"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^2.5.2",
+                "ext-pdo_sqlite": "*",
+                "guzzlehttp/guzzle": "^6.3|^7.0.1",
+                "league/flysystem-aws-s3-v3": "^1.0.13",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^8.0|^9.0",
+                "spatie/phpunit-snapshot-assertions": "^4.0"
+            },
+            "suggest": {
+                "league/flysystem-aws-s3-v3": "Required to use AWS S3 file storage",
+                "php-ffmpeg/php-ffmpeg": "Required for generating video thumbnails"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\MediaLibrary\\MediaLibraryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\MediaLibrary\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://murze.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Associate files with Eloquent models",
+            "homepage": "https://github.com/spatie/laravel-medialibrary",
+            "keywords": [
+                "cms",
+                "conversion",
+                "downloads",
+                "images",
+                "laravel",
+                "laravel-medialibrary",
+                "media",
+                "spatie"
+            ],
+            "time": "2021-05-26T16:48:02+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "3.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "1c51a5fa12131565fe3860705163e53d7a26258a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/1c51a5fa12131565fe3860705163e53d7a26258a",
+                "reference": "1c51a5fa12131565fe3860705163e53d7a26258a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^5.8|^6.0|^7.0|^8.0",
+                "illuminate/container": "^5.8|^6.0|^7.0|^8.0",
+                "illuminate/contracts": "^5.8|^6.0|^7.0|^8.0",
+                "illuminate/database": "^5.8|^6.0|^7.0|^8.0",
+                "php": "^7.2.5|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^8.0|^9.0",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 5.8 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security",
+                "spatie"
+            ],
+            "time": "2020-11-09T14:08:36+00:00"
+        },
+        {
+            "name": "spatie/laravel-translatable",
+            "version": "4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-translatable.git",
+                "reference": "5900d6002a5795712058a04c7ca7c2c44b3e0850"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-translatable/zipball/5900d6002a5795712058a04c7ca7c2c44b3e0850",
+                "reference": "5900d6002a5795712058a04c7ca7c2c44b3e0850",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^6.0|^7.0|^8.0",
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^4.0|^5.0|^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Translatable\\TranslatableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Translatable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Mohamed Said",
+                    "email": "theMohamedSaid@gmail.com",
+                    "role": "Original idea"
+                }
+            ],
+            "description": "A trait to make an Eloquent model hold translations",
+            "homepage": "https://github.com/spatie/laravel-translatable",
+            "keywords": [
+                "eloquent",
+                "i8n",
+                "laravel-translatable",
+                "model",
+                "multilingual",
+                "spatie",
+                "translate"
+            ],
+            "time": "2020-11-19T14:19:29+00:00"
+        },
+        {
+            "name": "spatie/pdf-to-image",
+            "version": "v2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/pdf-to-image.git",
+                "reference": "6718a89065c34dfadfbb2ca61eb1c3e6a956e503"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/pdf-to-image/zipball/6718a89065c34dfadfbb2ca61eb1c3e6a956e503",
+                "reference": "6718a89065c34dfadfbb2ca61eb1c3e6a956e503",
+                "shasum": ""
+            },
+            "require": {
+                "org_heigl/ghostscript": "^2.2",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.2",
+                "spatie/temporary-directory": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\PdfToImage\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Convert a pdf to an image",
+            "homepage": "https://github.com/spatie/pdf-to-image",
+            "keywords": [
+                "convert",
+                "image",
+                "pdf",
+                "pdf-to-image",
+                "spatie"
+            ],
+            "time": "2017-06-20T05:58:45+00:00"
+        },
+        {
+            "name": "spatie/temporary-directory",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/temporary-directory.git",
+                "reference": "f517729b3793bca58f847c5fd383ec16f03ffec6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/f517729b3793bca58f847c5fd383ec16f03ffec6",
+                "reference": "f517729b3793bca58f847c5fd383ec16f03ffec6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\TemporaryDirectory\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily create, use and destroy temporary directories",
+            "homepage": "https://github.com/spatie/temporary-directory",
+            "keywords": [
+                "php",
+                "spatie",
+                "temporary-directory"
+            ],
+            "time": "2020-11-09T15:54:21+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2997,6 +5133,382 @@
     ],
     "packages-dev": [
         {
+            "name": "brackets/admin-generator",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BRACKETS-by-TRIAD/admin-generator.git",
+                "reference": "949c50ab33feb8a9374665d35f5d16f42290aa2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BRACKETS-by-TRIAD/admin-generator/zipball/949c50ab33feb8a9374665d35f5d16f42290aa2b",
+                "reference": "949c50ab33feb8a9374665d35f5d16f42290aa2b",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.6.0",
+                "illuminate/console": "^6.0|^7.0",
+                "illuminate/support": "^6.0|^7.0",
+                "laravel/helpers": "~1.0",
+                "php": "^7.2.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "~4.0|~5.0",
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Brackets\\AdminGenerator\\AdminGeneratorServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "Brackets\\AdminGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavol Perdík",
+                    "email": "pavol.perdik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "David Běhal",
+                    "email": "david.behal@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Matej Minár",
+                    "email": "matej.minar@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dušan Subally",
+                    "email": "dusan.subally@triad.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Richard Dominik",
+                    "email": "richard.dominik@brackets.sk",
+                    "homepage": "https://www.brackets.sk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel 7 CRUD generator for brackets/craftable",
+            "keywords": [
+                "admin",
+                "cms",
+                "craftable",
+                "crud",
+                "generator",
+                "laravel",
+                "make"
+            ],
+            "time": "2020-10-22T09:29:57+00:00"
+        },
+        {
+            "name": "doctrine/cache",
+            "version": "1.11.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "3bb5588cec00a0268829cc4a518490df6741af9d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/3bb5588cec00a0268829cc4a518490df6741af9d",
+                "reference": "3bb5588cec00a0268829cc4a518490df6741af9d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1 || ^8.0"
+            },
+            "conflict": {
+                "doctrine/common": ">2.2,<2.4",
+                "psr/cache": ">=3"
+            },
+            "require-dev": {
+                "alcaeus/mongo-php-adapter": "^1.1",
+                "cache/integration-tests": "dev-master",
+                "doctrine/coding-standard": "^8.0",
+                "mongodb/mongodb": "^1.1",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+                "predis/predis": "~1.0",
+                "psr/cache": "^1.0 || ^2.0",
+                "symfony/cache": "^4.4 || ^5.2"
+            },
+            "suggest": {
+                "alcaeus/mongo-php-adapter": "Required to use legacy MongoDB driver"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "PHP Doctrine Cache library is a popular cache implementation that supports many different drivers such as redis, memcache, apc, mongodb and others.",
+            "homepage": "https://www.doctrine-project.org/projects/cache.html",
+            "keywords": [
+                "abstraction",
+                "apcu",
+                "cache",
+                "caching",
+                "couchdb",
+                "memcached",
+                "php",
+                "redis",
+                "xcache"
+            ],
+            "time": "2021-05-25T09:01:55+00:00"
+        },
+        {
+            "name": "doctrine/dbal",
+            "version": "2.13.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "c800380457948e65bbd30ba92cc17cda108bf8c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/c800380457948e65bbd30ba92cc17cda108bf8c9",
+                "reference": "c800380457948e65bbd30ba92cc17cda108bf8c9",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/cache": "^1.0",
+                "doctrine/deprecations": "^0.5.3",
+                "doctrine/event-manager": "^1.0",
+                "ext-pdo": "*",
+                "php": "^7.1 || ^8"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "8.2.0",
+                "jetbrains/phpstorm-stubs": "2020.2",
+                "phpstan/phpstan": "0.12.81",
+                "phpunit/phpunit": "^7.5.20|^8.5|9.5.0",
+                "squizlabs/php_codesniffer": "3.6.0",
+                "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
+                "vimeo/psalm": "4.6.4"
+            },
+            "suggest": {
+                "symfony/console": "For helpful console commands such as SQL execution and import of files."
+            },
+            "bin": [
+                "bin/doctrine-dbal"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\DBAL\\": "lib/Doctrine/DBAL"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                }
+            ],
+            "description": "Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection and management.",
+            "homepage": "https://www.doctrine-project.org/projects/dbal.html",
+            "keywords": [
+                "abstraction",
+                "database",
+                "db2",
+                "dbal",
+                "mariadb",
+                "mssql",
+                "mysql",
+                "oci8",
+                "oracle",
+                "pdo",
+                "pgsql",
+                "postgresql",
+                "queryobject",
+                "sasql",
+                "sql",
+                "sqlanywhere",
+                "sqlite",
+                "sqlserver",
+                "sqlsrv"
+            ],
+            "time": "2021-04-17T17:30:19+00:00"
+        },
+        {
+            "name": "doctrine/deprecations",
+            "version": "v0.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/deprecations.git",
+                "reference": "9504165960a1f83cc1480e2be1dd0a0478561314"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/9504165960a1f83cc1480e2be1dd0a0478561314",
+                "reference": "9504165960a1f83cc1480e2be1dd0a0478561314",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^7.0|^8.0|^9.0",
+                "psr/log": "^1.0"
+            },
+            "suggest": {
+                "psr/log": "Allows logging deprecations via PSR-3 logger implementation"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Deprecations\\": "lib/Doctrine/Deprecations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all deprecations or selectively for packages.",
+            "homepage": "https://www.doctrine-project.org/",
+            "time": "2021-03-21T12:59:47+00:00"
+        },
+        {
+            "name": "doctrine/event-manager",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/event-manager.git",
+                "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/event-manager/zipball/41370af6a30faa9dc0368c4a6814d596e81aba7f",
+                "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "conflict": {
+                "doctrine/common": "<2.9@dev"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\": "lib/Doctrine/Common"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                },
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                }
+            ],
+            "description": "The Doctrine Event Manager is a simple PHP event system that was built to be used with the various Doctrine projects.",
+            "homepage": "https://www.doctrine-project.org/projects/event-manager.html",
+            "keywords": [
+                "event",
+                "event dispatcher",
+                "event manager",
+                "event system",
+                "events"
+            ],
+            "time": "2020-05-29T18:28:51+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.3.0",
             "source": {
@@ -3161,6 +5673,7 @@
                 "faker",
                 "fixtures"
             ],
+            "abandoned": true,
             "time": "2019-12-12T13:22:17+00:00"
         },
         {
@@ -3210,6 +5723,59 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
+        },
+        {
+            "name": "laravel/helpers",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/helpers.git",
+                "reference": "febb10d8daaf86123825de2cb87f789a3371f0ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/helpers/zipball/febb10d8daaf86123825de2cb87f789a3371f0ac",
+                "reference": "febb10d8daaf86123825de2cb87f789a3371f0ac",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0",
+                "php": "^7.1.3|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0|^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Dries Vints",
+                    "email": "dries.vints@gmail.com"
+                }
+            ],
+            "description": "Provides backwards compatibility for helpers in the latest Laravel release.",
+            "keywords": [
+                "helpers",
+                "laravel"
+            ],
+            "time": "2021-02-16T15:27:11+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -3954,6 +6520,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -4699,12 +7266,12 @@
             "version": "1.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "aed98a490f9a8f78468232db345ab9cf606cf598"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/aed98a490f9a8f78468232db345ab9cf606cf598",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/aed98a490f9a8f78468232db345ab9cf606cf598",
                 "reference": "aed98a490f9a8f78468232db345ab9cf606cf598",
                 "shasum": ""
             },
@@ -4751,5 +7318,6 @@
     "platform": {
         "php": "^7.2"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
